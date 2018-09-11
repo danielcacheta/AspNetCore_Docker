@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  aspnetcore.docker.api:
+    image: ${DOCKER_REGISTRY}aspnetcoredockerapi
+    build:
+      context: .
+      dockerfile: AspNetCore.Docker.API/Dockerfile
